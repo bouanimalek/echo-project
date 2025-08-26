@@ -1,12 +1,15 @@
-import { Button } from "@workspace/ui/components/button";
 import { add } from "@workspace/math/add";
+import { Button } from "@workspace/ui/components/button";
+import { Input } from "@workspace/ui/components/input";
+
 export default function Page() {
   return (
     <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold">Hello World WebApp</h1>
+        <h1 className="text-2xl font-bold">Hello World WidgetApp</h1>
         <Button size="sm">Button</Button>
-        <p>{add(1, 2)}</p>
+        <p>{add(1, 8)}</p>
+        <Input />
       </div>
     </div>
   );
